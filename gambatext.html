@@ -262,6 +262,17 @@ main {
 .subj-sugaku .subject-icon  { background: #FFF4EC; }
 .subj-eigo .subject-icon    { background: #E8F4FD; }
 .subj-rika .subject-icon    { background: #E8F5EF; }
+.subject-subsection { margin-top: 8px; }
+.subject-subsection + .subject-subsection { margin-top: 16px; }
+.subsection-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--navy);
+  border-left: 3px solid var(--navy);
+  padding: 2px 0 2px 8px;
+  display: block;
+  margin-bottom: 6px;
+}
 .subj-shakai .subject-icon  { background: #F0EBFF; }
 
 .subject-label {
@@ -574,7 +585,7 @@ footer {
       <div class="subject-header">
         <div class="subject-icon" aria-hidden="true">🔬</div>
         <span class="subject-label" id="g1-rika-label">理科</span>
-        <span class="subject-count">5件</span>
+        <span class="subject-count">6件</span>
       </div>
       <ul class="pdf-list" aria-label="中学１年　理科のテキスト">
         <li class="pdf-item available">
@@ -612,6 +623,14 @@ footer {
             <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/rika-chu1-05-mitsudo.pdf')" aria-label="⑤いろいろな物質・密度のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
+        <!-- 気体の性質と製法 -->
+        <li class="pdf-item available">
+          <span class="pdf-title">⑥気体の性質と製法<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/rika-chu1-06-kitai-seishitsu.pdf')" aria-label="⑥気体の性質と製法のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/rika-chu1-06-kitai-seishitsu.pdf')" aria-label="⑥気体の性質と製法のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
       </ul>
     </section>
 
@@ -620,37 +639,102 @@ footer {
       <div class="subject-header">
         <div class="subject-icon" aria-hidden="true">🌏</div>
         <span class="subject-label" id="g1-shakai-label">社会</span>
-        <span class="subject-count">1件</span>
+        <span class="subject-count">10件</span>
       </div>
-      <ul class="pdf-list" aria-label="中学１年　社会のテキスト">
-
-        <!-- 歴史：室町時代（応用編） -->
+      <div class="subject-subsection">
+        <div class="subsection-label">📜&nbsp;歴史</div>
+        <ul class="pdf-list">
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・基礎編】歴史① 四大文明〜邪馬台国<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-basic00-yondaibunmei.pdf')" aria-label="四大文明〜邪馬台国のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-basic00-yondaibunmei.pdf')" aria-label="四大文明〜邪馬台国のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・基礎編】歴史② 聖徳太子・奈良時代<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-basic01-shototaishi-nara.pdf')" aria-label="聖徳太子・奈良時代のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-basic01-shototaishi-nara.pdf')" aria-label="聖徳太子・奈良時代のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・基礎編】歴史③ 平安・鎌倉時代<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-basic02-heian-kamakura.pdf')" aria-label="平安・鎌倉時代のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-basic02-heian-kamakura.pdf')" aria-label="平安・鎌倉時代のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・基礎編】歴史④ 室町・戦国時代<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-basic03-muromachi-sengoku.pdf')" aria-label="室町・戦国時代のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-basic03-muromachi-sengoku.pdf')" aria-label="室町・戦国時代のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・応用編】① 四大文明〜邪馬台国（第１〜４章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo01-yondaibunmei.pdf')" aria-label="歴史応用① 四大文明〜邪馬台国のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo01-yondaibunmei.pdf')" aria-label="歴史応用① 四大文明〜邪馬台国のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・応用編】② 古墳〜奈良時代（第５〜７章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo02-kofun-nara.pdf')" aria-label="歴史応用② 古墳〜奈良時代のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo02-kofun-nara.pdf')" aria-label="歴史応用② 古墳〜奈良時代のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・応用編】③ 平安〜鎌倉時代（第８〜９章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo03-heian-kamakura.pdf')" aria-label="歴史応用③ 平安〜鎌倉時代のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo03-heian-kamakura.pdf')" aria-label="歴史応用③ 平安〜鎌倉時代のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
         <li class="pdf-item available">
           <span class="pdf-title">
-            【歴史・応用編】歴史⑩ 室町時代
+            【歴史・応用編】④ 室町〜江戸前半（第１０〜１２章）
             <span class="pdf-tag-new" aria-label="新着">NEW</span>
           </span>
           <div class="pdf-actions">
             <button class="btn btn-view"
                     onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo04-muromachi.pdf')"
-                    aria-label="歴史⑩ 室町時代のPDFを新しいタブで開く">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/>
-              </svg>
+                    aria-label="歴史応用④ 室町〜江戸前半のPDFを新しいタブで開く">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>
               閲覧
             </button>
             <button class="btn btn-print"
                     onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo04-muromachi.pdf')"
-                    aria-label="歴史⑩ 室町時代のPDFを印刷する">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/>
-              </svg>
+                    aria-label="歴史応用④ 室町〜江戸前半のPDFを印刷する">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>
               印刷
             </button>
           </div>
         </li>
-
-      </ul>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・応用編】⑧ 日清日露戦争（第１９〜２０章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo08-nisshin-nichiro.pdf')" aria-label="歴史応用⑧ 日清日露戦争のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo08-nisshin-nichiro.pdf')" aria-label="歴史応用⑧ 日清日露戦争のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・応用編】前半合冊（第１〜１２章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo-zenhan.pdf')" aria-label="歴史応用 前半合冊のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo-zenhan.pdf')" aria-label="歴史応用 前半合冊のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        </ul>
+      </div>
+      <div class="subject-subsection">
+        <div class="subsection-label">🗾&nbsp;地理</div>
+        <ul class="pdf-list">
+        <li class="pdf-item unavailable"><span class="pdf-title">テキストを準備中です</span><span class="pdf-status">準備中</span></li>
+        </ul>
+      </div>
     </section>
   </div><!-- /g1 -->
 
@@ -864,167 +948,135 @@ footer {
       <div class="subject-header">
         <div class="subject-icon" aria-hidden="true">🌏</div>
         <span class="subject-label" id="g2-shakai-label">社会</span>
-        <span class="subject-count">17件</span>
+        <span class="subject-count">22件</span>
       </div>
-      <ul class="pdf-list" aria-label="中学２年　社会のテキスト">
-
+      <div class="subject-subsection">
+        <div class="subsection-label">📜&nbsp;歴史</div>
+        <ul class="pdf-list">
         <!-- 歴史・基礎編④ -->
         <li class="pdf-item available">
           <span class="pdf-title">
-            【歴史・基礎編】歴史④ 江戸時代〜
+            【歴史・基礎編】歴史⑤ 江戸時代〜
             <span class="pdf-tag-new" aria-label="新着">NEW</span>
           </span>
           <div class="pdf-actions">
             <button class="btn btn-view"
                     onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-basic04-edo.pdf')"
-                    aria-label="歴史④ 江戸時代のPDFを新しいタブで開く">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/>
-              </svg>
+                    aria-label="歴史⑤ 江戸時代のPDFを新しいタブで開く">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>
               閲覧
             </button>
             <button class="btn btn-print"
                     onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-basic04-edo.pdf')"
-                    aria-label="歴史④ 江戸時代のPDFを印刷する">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/>
-              </svg>
+                    aria-label="歴史⑤ 江戸時代のPDFを印刷する">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>
               印刷
             </button>
           </div>
         </li>
-
         <!-- 歴史・基礎編⑤ -->
         <li class="pdf-item available">
           <span class="pdf-title">
-            【歴史・基礎編】歴史⑤ 江戸幕府の滅亡と開国
+            【歴史・基礎編】歴史⑥ 江戸幕府の滅亡と開国
             <span class="pdf-tag-new" aria-label="新着">NEW</span>
           </span>
           <div class="pdf-actions">
             <button class="btn btn-view"
                     onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-basic05-kaikoku.pdf')"
-                    aria-label="歴史⑤ 江戸幕府の滅亡と開国のPDFを新しいタブで開く">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/>
-              </svg>
+                    aria-label="歴史⑥ 江戸幕府の滅亡と開国のPDFを新しいタブで開く">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>
               閲覧
             </button>
             <button class="btn btn-print"
                     onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-basic05-kaikoku.pdf')"
-                    aria-label="歴史⑤ 江戸幕府の滅亡と開国のPDFを印刷する">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/>
-              </svg>
+                    aria-label="歴史⑥ 江戸幕府の滅亡と開国のPDFを印刷する">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>
               印刷
             </button>
           </div>
         </li>
-
         <!-- 歴史・基礎編⑥ -->
         <li class="pdf-item available">
           <span class="pdf-title">
-            【歴史・基礎編】歴史⑥ 明治維新・日清日露戦争
+            【歴史・基礎編】歴史⑦ 明治維新・日清日露戦争
             <span class="pdf-tag-new" aria-label="新着">NEW</span>
           </span>
           <div class="pdf-actions">
             <button class="btn btn-view"
                     onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-basic06-meijishin.pdf')"
-                    aria-label="歴史⑥ 明治維新・日清日露戦争のPDFを新しいタブで開く">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/>
-              </svg>
+                    aria-label="歴史⑦ 明治維新・日清日露戦争のPDFを新しいタブで開く">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>
               閲覧
             </button>
             <button class="btn btn-print"
                     onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-basic06-meijishin.pdf')"
-                    aria-label="歴史⑥ 明治維新・日清日露戦争のPDFを印刷する">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/>
-              </svg>
+                    aria-label="歴史⑦ 明治維新・日清日露戦争のPDFを印刷する">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>
               印刷
             </button>
           </div>
         </li>
-
-        <!-- 歴史・応用編⑬ -->
         <li class="pdf-item available">
-          <span class="pdf-title">
-            【歴史・応用編】歴史⑬ 江戸時代前半 改革・元禄文化
-            <span class="pdf-tag-new" aria-label="新着">NEW</span>
-          </span>
+          <span class="pdf-title">【歴史・応用編】① 四大文明〜邪馬台国（第１〜４章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
-            <button class="btn btn-view"
-                    onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo05-edo-gennroku.pdf')"
-                    aria-label="歴史⑬ 江戸時代前半のPDFを新しいタブで開く">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/>
-              </svg>
-              閲覧
-            </button>
-            <button class="btn btn-print"
-                    onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo05-edo-gennroku.pdf')"
-                    aria-label="歴史⑬ 江戸時代前半のPDFを印刷する">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/>
-              </svg>
-              印刷
-            </button>
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo01-yondaibunmei.pdf')" aria-label="歴史応用① 四大文明〜邪馬台国のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo01-yondaibunmei.pdf')" aria-label="歴史応用① 四大文明〜邪馬台国のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-
-        <!-- 歴史・応用編⑮ -->
         <li class="pdf-item available">
-          <span class="pdf-title">
-            【歴史・応用編】歴史⑮ 欧米の歴史と開国①
-            <span class="pdf-tag-new" aria-label="新着">NEW</span>
-          </span>
+          <span class="pdf-title">【歴史・応用編】② 古墳〜奈良時代（第５〜７章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
-            <button class="btn btn-view"
-                    onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo06-obei-kaikoku.pdf')"
-                    aria-label="歴史⑮ 欧米の歴史と開国のPDFを新しいタブで開く">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/>
-              </svg>
-              閲覧
-            </button>
-            <button class="btn btn-print"
-                    onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo06-obei-kaikoku.pdf')"
-                    aria-label="歴史⑮ 欧米の歴史と開国のPDFを印刷する">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/>
-              </svg>
-              印刷
-            </button>
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo02-kofun-nara.pdf')" aria-label="歴史応用② 古墳〜奈良時代のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo02-kofun-nara.pdf')" aria-label="歴史応用② 古墳〜奈良時代のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-
-        <!-- 歴史・応用編⑰ -->
         <li class="pdf-item available">
-          <span class="pdf-title">
-            【歴史・応用編】歴史⑰ 開国
-            <span class="pdf-tag-new" aria-label="新着">NEW</span>
-          </span>
+          <span class="pdf-title">【歴史・応用編】③ 平安〜鎌倉時代（第８〜９章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
-            <button class="btn btn-view"
-                    onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo07-kaikoku-bakumatsu.pdf')"
-                    aria-label="歴史⑰ 開国のPDFを新しいタブで開く">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/>
-              </svg>
-              閲覧
-            </button>
-            <button class="btn btn-print"
-                    onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo07-kaikoku-bakumatsu.pdf')"
-                    aria-label="歴史⑰ 開国のPDFを印刷する">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/>
-              </svg>
-              印刷
-            </button>
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo03-heian-kamakura.pdf')" aria-label="歴史応用③ 平安〜鎌倉時代のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo03-heian-kamakura.pdf')" aria-label="歴史応用③ 平安〜鎌倉時代のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・応用編】⑤ 江戸元禄〜改革（第１３〜１４章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo05-edo-gennroku.pdf')" aria-label="歴史⑬ 江戸時代前半のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo05-edo-gennroku.pdf')" aria-label="歴史⑬ 江戸時代前半のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・応用編】⑥ 欧米進出〜開国（第１５〜１６章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo06-obei-kaikoku.pdf')" aria-label="歴史⑮ 欧米の歴史と開国のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo06-obei-kaikoku.pdf')" aria-label="歴史⑮ 欧米の歴史と開国のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・応用編】⑦ 開国〜幕末（第１７〜１８章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo07-kaikoku-bakumatsu.pdf')" aria-label="歴史⑰ 開国のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo07-kaikoku-bakumatsu.pdf')" aria-label="歴史⑰ 開国のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
 
-        <!-- 【地理】日本の姿 -->
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・応用編】⑧ 日清日露戦争（第１９〜２０章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo08-nisshin-nichiro.pdf')" aria-label="歴史応用⑧ 日清日露戦争のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo08-nisshin-nichiro.pdf')" aria-label="歴史応用⑧ 日清日露戦争のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・応用編】前半合冊（第１〜１２章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo-zenhan.pdf')" aria-label="歴史応用 前半合冊のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo-zenhan.pdf')" aria-label="歴史応用 前半合冊のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        </ul>
+      </div>
+      <div class="subject-subsection">
+        <div class="subsection-label">🗾&nbsp;地理</div>
+        <ul class="pdf-list">
         <li class="pdf-item available">
           <span class="pdf-title">【地理】日本の姿<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
@@ -1032,7 +1084,6 @@ footer {
             <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-geo01-nihon-sugata.pdf')" aria-label="日本の姿のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-        <!-- 【地理】地形図の見方 -->
         <li class="pdf-item available">
           <span class="pdf-title">【地理】地形図の見方<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
@@ -1040,7 +1091,6 @@ footer {
             <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-geo02-chikei-mikata.pdf')" aria-label="地形図の見方のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-        <!-- 【地理】世界の資源・エネルギー -->
         <li class="pdf-item available">
           <span class="pdf-title">【地理】世界の資源・エネルギー<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
@@ -1048,7 +1098,6 @@ footer {
             <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-geo04-sekai-shigen.pdf')" aria-label="世界の資源・エネルギーのPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-        <!-- 【地理】世界と日本のつながり -->
         <li class="pdf-item available">
           <span class="pdf-title">【地理】世界と日本のつながり<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
@@ -1056,86 +1105,27 @@ footer {
             <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-geo05-sekai-nihon.pdf')" aria-label="世界と日本のつながりのPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-
-        <!-- 地理：九州 -->
         <li class="pdf-item available">
-          <span class="pdf-title">
-            【地理】九州地方
-            <span class="pdf-tag-new" aria-label="新着">NEW</span>
-          </span>
+          <span class="pdf-title">【地理】九州地方<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
-            <button class="btn btn-view"
-                    onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-geo06-kyushu.pdf')"
-                    aria-label="九州地方のPDFを新しいタブで開く">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/>
-              </svg>
-              閲覧
-            </button>
-            <button class="btn btn-print"
-                    onclick="printPdf('https://realizefield.github.io/gamba-text/sha-geo06-kyushu.pdf')"
-                    aria-label="九州地方のPDFを印刷する">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/>
-              </svg>
-              印刷
-            </button>
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-geo06-kyushu.pdf')" aria-label="九州地方のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-geo06-kyushu.pdf')" aria-label="九州地方のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-
-        <!-- 地理：中国・四国 -->
         <li class="pdf-item available">
-          <span class="pdf-title">
-            【地理】中国・四国地方
-            <span class="pdf-tag-new" aria-label="新着">NEW</span>
-          </span>
+          <span class="pdf-title">【地理】中国・四国地方<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
-            <button class="btn btn-view"
-                    onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-geo07-chugoku-shikoku.pdf')"
-                    aria-label="中国・四国地方のPDFを新しいタブで開く">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/>
-              </svg>
-              閲覧
-            </button>
-            <button class="btn btn-print"
-                    onclick="printPdf('https://realizefield.github.io/gamba-text/sha-geo07-chugoku-shikoku.pdf')"
-                    aria-label="中国・四国地方のPDFを印刷する">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/>
-              </svg>
-              印刷
-            </button>
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-geo07-chugoku-shikoku.pdf')" aria-label="中国・四国地方のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-geo07-chugoku-shikoku.pdf')" aria-label="中国・四国地方のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-
-        <!-- 地理：近畿 -->
         <li class="pdf-item available">
-          <span class="pdf-title">
-            【地理】近畿地方
-            <span class="pdf-tag-new" aria-label="新着">NEW</span>
-          </span>
+          <span class="pdf-title">【地理】近畿地方<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
-            <button class="btn btn-view"
-                    onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-geo08-kinki.pdf')"
-                    aria-label="近畿地方のPDFを新しいタブで開く">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/>
-              </svg>
-              閲覧
-            </button>
-            <button class="btn btn-print"
-                    onclick="printPdf('https://realizefield.github.io/gamba-text/sha-geo08-kinki.pdf')"
-                    aria-label="近畿地方のPDFを印刷する">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/>
-              </svg>
-              印刷
-            </button>
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-geo08-kinki.pdf')" aria-label="近畿地方のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-geo08-kinki.pdf')" aria-label="近畿地方のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-
-        <!-- 【地理】中部地方 -->
         <li class="pdf-item available">
           <span class="pdf-title">【地理】中部地方<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
@@ -1143,7 +1133,6 @@ footer {
             <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-geo09-chubu.pdf')" aria-label="中部地方のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-        <!-- 【地理】関東地方 -->
         <li class="pdf-item available">
           <span class="pdf-title">【地理】関東地方<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
@@ -1151,7 +1140,6 @@ footer {
             <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-geo10-kanto.pdf')" aria-label="関東地方のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-        <!-- 【地理】東北地方 -->
         <li class="pdf-item available">
           <span class="pdf-title">【地理】東北地方<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
@@ -1159,7 +1147,6 @@ footer {
             <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-geo11-tohoku.pdf')" aria-label="東北地方のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-        <!-- 【地理】北海道地方 -->
         <li class="pdf-item available">
           <span class="pdf-title">【地理】北海道地方<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
@@ -1167,8 +1154,8 @@ footer {
             <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-geo12-hokkaido.pdf')" aria-label="北海道地方のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-
-      </ul>
+        </ul>
+      </div>
     </section>
   </div><!-- /g2 -->
 
@@ -1310,63 +1297,71 @@ footer {
       <div class="subject-header">
         <div class="subject-icon" aria-hidden="true">🌏</div>
         <span class="subject-label" id="g3-shakai-label">社会</span>
-        <span class="subject-count">4件</span>
+        <span class="subject-count">9件</span>
       </div>
-      <ul class="pdf-list" aria-label="中学３年　社会のテキスト">
-
-        <!-- 歴史・基礎編⑦ -->
+      <div class="subject-subsection">
+        <div class="subsection-label">📜&nbsp;歴史</div>
+        <ul class="pdf-list">
         <li class="pdf-item available">
-          <span class="pdf-title">
-            【歴史・基礎編】歴史⑦ 第一次大戦〜現代
-            <span class="pdf-tag-new" aria-label="新着">NEW</span>
-          </span>
+          <span class="pdf-title">【歴史・応用編】① 四大文明〜邪馬台国（第１〜４章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
-            <button class="btn btn-view"
-                    onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-basic07-daiichijigendai.pdf')"
-                    aria-label="歴史⑦ 第一次大戦〜現代のPDFを新しいタブで開く">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/>
-              </svg>
-              閲覧
-            </button>
-            <button class="btn btn-print"
-                    onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-basic07-daiichijigendai.pdf')"
-                    aria-label="歴史⑦ 第一次大戦〜現代のPDFを印刷する">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/>
-              </svg>
-              印刷
-            </button>
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo01-yondaibunmei.pdf')" aria-label="歴史応用① 四大文明〜邪馬台国のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo01-yondaibunmei.pdf')" aria-label="歴史応用① 四大文明〜邪馬台国のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-
-        <!-- 歴史・応用編㉑ -->
         <li class="pdf-item available">
-          <span class="pdf-title">
-            【歴史・応用編】歴史㉑ 第１次大戦
-            <span class="pdf-tag-new" aria-label="新着">NEW</span>
-          </span>
+          <span class="pdf-title">【歴史・応用編】② 古墳〜奈良時代（第５〜７章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
-            <button class="btn btn-view"
-                    onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo09-dai2ji-gendai.pdf')"
-                    aria-label="歴史㉑ 第１次大戦のPDFを新しいタブで開く">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/>
-              </svg>
-              閲覧
-            </button>
-            <button class="btn btn-print"
-                    onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo09-dai2ji-gendai.pdf')"
-                    aria-label="歴史㉑ 第１次大戦のPDFを印刷する">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                <path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/>
-              </svg>
-              印刷
-            </button>
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo02-kofun-nara.pdf')" aria-label="歴史応用② 古墳〜奈良時代のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo02-kofun-nara.pdf')" aria-label="歴史応用② 古墳〜奈良時代のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・応用編】③ 平安〜鎌倉時代（第８〜９章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo03-heian-kamakura.pdf')" aria-label="歴史応用③ 平安〜鎌倉時代のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo03-heian-kamakura.pdf')" aria-label="歴史応用③ 平安〜鎌倉時代のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・基礎編】歴史⑧ 第一次大戦〜現代<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-basic07-daiichijigendai.pdf')" aria-label="歴史⑧ 第一次大戦〜現代のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-basic07-daiichijigendai.pdf')" aria-label="歴史⑧ 第一次大戦〜現代のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・応用編】⑧ 日清日露戦争（第１９〜２０章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo08-nisshin-nichiro.pdf')" aria-label="歴史応用⑧ 日清日露戦争のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo08-nisshin-nichiro.pdf')" aria-label="歴史応用⑧ 日清日露戦争のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・応用編】⑨ 第２次大戦〜現代（第２１〜２６章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo09-dai2ji-gendai.pdf')" aria-label="歴史㉑ 第１次大戦のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo09-dai2ji-gendai.pdf')" aria-label="歴史㉑ 第１次大戦のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
 
-        <!-- 公民① -->
+        <li class="pdf-item available">
+          <span class="pdf-title">【歴史・応用編】前半合冊（第１〜１２章）<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
+          <div class="pdf-actions">
+            <button class="btn btn-view" onclick="viewPdf('https://realizefield.github.io/gamba-text/sha-his-oyo-zenhan.pdf')" aria-label="歴史応用 前半合冊のPDFを新しいタブで開く"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3C5 3 2.7 5.3 2 8c.7 2.7 3 5 6 5s5.3-2.3 6-5c-.7-2.7-3-5-6-5Zm0 8a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0-4.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z" fill="currentColor"/></svg>閲覧</button>
+            <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/sha-his-oyo-zenhan.pdf')" aria-label="歴史応用 前半合冊のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
+          </div>
+        </li>
+        </ul>
+      </div>
+      <div class="subject-subsection">
+        <div class="subsection-label">🗾&nbsp;地理</div>
+        <ul class="pdf-list">
+        <li class="pdf-item unavailable"><span class="pdf-title">テキストを準備中です</span><span class="pdf-status">準備中</span></li>
+        </ul>
+      </div>
+      <div class="subject-subsection">
+        <div class="subsection-label">⚖️&nbsp;公民</div>
+        <ul class="pdf-list">
         <li class="pdf-item available">
           <span class="pdf-title">【公民】①現代社会と私たちの生活<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
@@ -1374,8 +1369,6 @@ footer {
             <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/koumin-chu3-01-gendaishakai.pdf')" aria-label="①現代社会と私たちの生活のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-
-        <!-- 公民② -->
         <li class="pdf-item available">
           <span class="pdf-title">【公民】②日本国憲法・国会・内閣・裁判所・地方自治<span class="pdf-tag-new" aria-label="新着">NEW</span></span>
           <div class="pdf-actions">
@@ -1383,8 +1376,8 @@ footer {
             <button class="btn btn-print" onclick="printPdf('https://realizefield.github.io/gamba-text/koumin-chu3-02-kenpou-kokkai.pdf')" aria-label="②日本国憲法・国会・内閣・裁判所・地方自治のPDFを印刷する"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 2h8v3H4V2Zm-1 4h10a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm1 5h8v2H4v-2Zm7-4a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" fill="currentColor"/></svg>印刷</button>
           </div>
         </li>
-
-      </ul>
+        </ul>
+      </div>
     </section>
   </div><!-- /g3 -->
 
